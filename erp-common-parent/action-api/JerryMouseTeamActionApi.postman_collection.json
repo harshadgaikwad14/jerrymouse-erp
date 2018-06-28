@@ -1,0 +1,127 @@
+{
+	"variables": [],
+	"info": {
+		"name": "JerryMouseTeamActionApi",
+		"_postman_id": "7b6eb287-52e3-8cf3-dd44-0666f5eda4da",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Note",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Notes",
+					"request": {
+						"url": "http://localhost:8080/api/notes",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "Get Notes"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Note By Id",
+					"request": {
+						"url": "http://localhost:8080/api/notes/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Note By Id",
+					"request": {
+						"url": "http://localhost:8080/api/notes/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"Test 3\",\n\t\"content\":\"Test 3\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Note By Id",
+					"request": {
+						"url": "http://localhost:8080/api/notes/2",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Note",
+					"request": {
+						"url": "http://localhost:8080/api/notes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\":\"Test4\",\"content\":\"Test Content5\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VendorType",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Vendor Type",
+					"request": {
+						"url": "http://localhost:8080/api/vendorTypes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"typeName\":\"Goods\",\"typeDesc\":\"Goods\",\"active\":\"true\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Vendor Types",
+					"request": {
+						"url": "http://localhost:8080/api/vendorTypes",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
