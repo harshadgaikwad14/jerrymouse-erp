@@ -122,6 +122,32 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Grade",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Grade_Units",
+					"request": {
+						"url": "http://localhost:8080/api/grades",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n \r\n   \"gradeName\":\"Grade 6\",\r\n   \"gradeDesc\":\"Grade 6 Desc\",\r\n   \"active\":true,\r\n   \r\n   \"units\":[  \r\n      {  \r\n        \r\n         \"unitName\":\"Unit 4\",\r\n         \"unitDesc\":\"Unit 4 Desc\",\r\n         \"active\":true\r\n         \r\n        \r\n      },\r\n      {  \r\n         \r\n         \"unitName\":\"Unit 5\",\r\n         \"unitDesc\":\"Unit 5 Desc\",\r\n         \"active\":true\r\n        \r\n      }\r\n   ]\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
