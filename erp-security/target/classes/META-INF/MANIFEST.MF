@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: erp-security
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Harshad
+Implementation-Vendor-Id: com.erp.common.parent
+Build-Jdk: 1.8.0_101
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/erp-common-parent/erp-security
+Created-By: Maven Integration for Eclipse
+
